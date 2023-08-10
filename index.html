@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="crud">
+        <div class="head">
+            <h1>CRUD</h1>
+            <p>PRODUCT MANAGEMENT</p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title">
+            <div class="input">
+                <input onkeyup="getTotal()" type="number" placeholder="price" id="price">
+                <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes">
+                <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads">
+                <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount">
+                <small id="total">69</small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <a class="button" id="submit">Create</a>
+        </div>
+        <div class="outputs">
+            <div class="searchBlock">
+                <input type="text" placeholder="Search" id="search">
+                <div class="btnSearch">
+                    <button id="searchTitle">Search by Title</button>
+                    <button id="searchCategory">Search By category</button>
+                </div>
+            </div>
+            <button id="clear" onclick="clearAll()" style="width: 100%;">Clear all</button>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <p style="text-align: center; color: aqua;"><strong>Created By Abed Rayen</strong></p>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
